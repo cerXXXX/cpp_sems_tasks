@@ -65,7 +65,6 @@ bool Board::revealCell(int x, int y) {
         return true;
     }
 
-    // Если вокруг нет мин, рекурсивно открываем соседей
     if (cell.adjacentMines == 0) {
         for (int dy = -1; dy <= 1; ++dy) {
             for (int dx = -1; dx <= 1; ++dx) {
